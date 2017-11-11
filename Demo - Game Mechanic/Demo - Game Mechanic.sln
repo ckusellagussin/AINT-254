@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo - Game Mechanic.CSharp", "Demo - Game Mechanic.CSharp.csproj", "{E1D1CDA1-B480-B27B-21F9-996EE13EC851}"
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo - Game Mechanic", "Demo - Game Mechanic.csproj", "{BBBF71B1-D5DE-479E-662D-7AD426CBDF2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E1D1CDA1-B480-B27B-21F9-996EE13EC851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1D1CDA1-B480-B27B-21F9-996EE13EC851}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1D1CDA1-B480-B27B-21F9-996EE13EC851}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1D1CDA1-B480-B27B-21F9-996EE13EC851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBF71B1-D5DE-479E-662D-7AD426CBDF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBF71B1-D5DE-479E-662D-7AD426CBDF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBF71B1-D5DE-479E-662D-7AD426CBDF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBF71B1-D5DE-479E-662D-7AD426CBDF2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
