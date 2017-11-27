@@ -121,7 +121,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,19 +325,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Casey\Documents\GitHub\AINT-254\Demo - Game Mechanic
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1e290000
-    m_LastClickedID: 10526
-    m_ExpandedIDs: 00000000e22400001229000000ca9a3bffffff7f
+    m_SelectedIDs: 98270000
+    m_LastClickedID: 10136
+    m_ExpandedIDs: 0000000034270000482700005627000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -365,7 +365,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e2240000
+    m_ExpandedIDs: 000000003427000048270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -392,8 +392,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -481,23 +481,23 @@ MonoBehaviour:
     height: 552
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 42f6ffff
-    m_LastClickedID: -2494
-    m_ExpandedIDs: 40f6ffff7ef6ffff00000000a2290000
+    m_SelectedIDs: 90fbffff
+    m_LastClickedID: -1136
+    m_ExpandedIDs: a6fbffff00000000fe2700000a280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: ConeMan_Enemy
+      m_OriginalName: ConeMan_Enemy
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10250
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -538,9 +538,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.2003136, y: 2.1934357, z: -1.7765837}
+    m_Target: {x: -2.077256, y: 0.065413475, z: -0.38552165}
     speed: 2
-    m_Value: {x: -3.2003136, y: 2.1934357, z: -1.7765837}
+    m_Value: {x: -2.077256, y: 0.065413475, z: -0.38552165}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -563,13 +563,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.4844915, y: -0.009974543, z: 0.0055253035, w: -0.87472165}
+    m_Target: {x: -0.42981386, y: -0.010295339, z: 0.0049017197, w: -0.9028455}
     speed: 2
-    m_Value: {x: -0.4844915, y: -0.009974543, z: 0.0055253035, w: -0.87472165}
+    m_Value: {x: -0.42981386, y: -0.010295339, z: 0.0049017197, w: -0.9028455}
   m_Size:
-    m_Target: 19.319124
+    m_Target: 11.590118
     speed: 2
-    m_Value: 19.319124
+    m_Value: 11.590118
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -681,5 +681,5 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 665
-    width: 1363
+    width: 1448
     height: 353

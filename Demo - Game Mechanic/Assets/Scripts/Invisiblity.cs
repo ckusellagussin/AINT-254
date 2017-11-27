@@ -3,22 +3,32 @@ using System.Collections;
 
 public class Invisiblity : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
 
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
 
-	}
-	
-    void OnCollisionEnter(Collision colission)
+    // Use this for initialization
+    void Start()
     {
-        gameObject.GetComponent<MeshRenderer>().enabled = true;
 
+
+      
+    }
+    public void Awake()
+    {
+        gameObject.GetComponent<Renderer>().enabled = false;
+
+     //   foreach (Transform child in transform)
+      //  {
+
+       //     child.GetComponent<Renderer>().enabled = false;
+       // }
 
     }
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 	
+
+
+
 	}
 }
