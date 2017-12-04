@@ -9,13 +9,13 @@ public class PlayerMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     void Update()
     {
-
         ControllPlayer();
+
     }
 
 
@@ -25,8 +25,12 @@ public class PlayerMovement : MonoBehaviour
         float moveVertical = Input.GetAxisRaw("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
 
+        if (movement != Vector3.zero)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
+            
+        }
 
         transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
 
