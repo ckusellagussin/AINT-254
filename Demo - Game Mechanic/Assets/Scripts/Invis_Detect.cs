@@ -5,13 +5,14 @@ using UnityEngine;
 public class Invis_Detect : MonoBehaviour
 {
 
-    Invisiblity invis = new Invisiblity();
+    Invisiblity invis;
 
 
     // Use this for initialization
     void Start()
     {
 
+        invis = gameObject.AddComponent<Invisiblity>();
 
     }
 
