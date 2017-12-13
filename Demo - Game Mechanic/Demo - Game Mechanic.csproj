@@ -219,11 +219,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Invis_Detect.cs" />
     <Compile Include="Assets\Scripts\Invisiblity.cs" />
     <Compile Include="Assets\Scripts\Player2Movement.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Rays.cs" />
+    <Compile Include="Assets\Scripts\Raycasting.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

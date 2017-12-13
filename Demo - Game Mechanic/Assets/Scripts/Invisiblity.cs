@@ -28,7 +28,6 @@ public class Invisiblity : MonoBehaviour
         foreach (Renderer rend in obj.GetComponentsInChildren<Renderer>())
         {
             rend.enabled = visible;
-
         }
 
     }
@@ -36,9 +35,6 @@ public class Invisiblity : MonoBehaviour
         // Update is called once per frame
         void Update()
         {
-
-
-
 
         }
 
