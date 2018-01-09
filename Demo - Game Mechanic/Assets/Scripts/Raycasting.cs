@@ -20,11 +20,11 @@ public class Raycasting : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        Ray ray = new Ray(transform.position, Vector3.forward);
+        Ray ray = new Ray(transform.position, -transform.up);
         RaycastHit hit;
 
 
-        Debug.DrawRay(transform.position, -transform.up * maxRayDistance, Color.red);
+        Debug.DrawRay(ray.origin, ray.direction * maxRayDistance, Color.red);
 
 
         if (Physics.Raycast(ray, out hit, maxRayDistance))
@@ -48,7 +48,7 @@ public class Raycasting : MonoBehaviour {
 
     private void rayHitInvis(Transform hit)
     {
-        hit.transform.gameObject.GetComponent<Invisiblity>().SetVisibility(hit.gameObject.gameObject, true);
+        hit.transform.gameObject.GetComponent<Invisiblity>().SetVisibility(hit.transform.gameObject, true);
         
 
 

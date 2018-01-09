@@ -4,12 +4,20 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float movementSpeed = 2.00f;
+    public float moveSpeed = 3.00f;
+
+    private new Rigidbody rigidbody;
+    private Vector3 moveInput;
+    private Vector3 moveVelocity;
+
+
 
     // Use this for initialization
     void Start()
     {
-        
+
+        rigidbody = GetComponent<Rigidbody>();
+
     }
 
     void Update()
@@ -21,19 +29,26 @@ public class PlayerMovement : MonoBehaviour
 
     void ControllPlayer()
     {
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        float moveVertical = Input.GetAxisRaw("Vertical");
+        moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
+        moveVelocity = moveSpeed * moveInput;
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+         Vector3 playerDirection = Vector3.right * Input.GetAxisRaw("HorizontalR") + Vector3.forward * -Input.GetAxisRaw("VerticalR");
 
-        if (movement != Vector3.zero)
+         if (playerDirection.sqrMagnitude > 0.0f)
+
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
-            
-        }
+            transform.rotation = Quaternion.LookRotation(playerDirection, Vector3.up);
 
-        transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
+         }
 
     }
+
+    void FixedUpdate()
+    {
+
+        rigidbody.velocity = moveVelocity;
+
+    }
+
 
 }
